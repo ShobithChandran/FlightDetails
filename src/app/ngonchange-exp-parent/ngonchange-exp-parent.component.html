@@ -1,0 +1,10 @@
+Enter Customer name
+<input
+type="text"
+(keyup)="changeFromParent($event)"
+placeholder="Enter some text here" />
+<br> <br>
+
+<a (click)="changeFromParent($event)">Change from parent..</a>
+<br/>
+<app-ngonchange-exp-child [parentData]="data"></app-ngonchange-exp-child>

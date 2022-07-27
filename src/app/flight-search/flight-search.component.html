@@ -1,0 +1,8 @@
+<h2>  Flight timing Search</h2>
+Enter Flight Name
+<input
+type="text" name="flightName" 
+(keyup)="changeFlightName(flightName.value)"
+placeholder="Enter Flight name" #flightName/>
+
+<app-flight-timing [flightName]="flightNameEnteredInput"></app-flight-timing>
